@@ -1,0 +1,68 @@
+<!-- Made for testing only -->
+<link rel="stylesheet" href="kerses.css">
+<script type="text/javascript" src="kerses.js"></script>
+<body>
+  <div class="kerses">
+  <!-- Default box for testing design without making request -->
+  <div class="kerses-box">
+    <button class="kerses-close" onclick="document.body.removeChild(document.body.getElementsByClassName('kerses')[0]);"></button>
+    <div class="kerses-internals">
+      <img class="kerses-top-image" src="image.png">
+      <div class="kerses-article">
+        <a href="google.com" target="_blank" class="kerses-article-link">
+          <h3 class="kerses-article-title">This is the Title of a News Article</h3>
+        </a>
+        <p class="kerses-producer">
+          <a href="google.com" target="_blank" class="kerses-producer-link">News Site</a> - Date Written
+        </p>
+        <div class="kerses-content-box">
+          <p class="kerses-content">
+            This is the content that we want to include in the context box, it should be easy to read no matter how long it is. This is important as we want people to be able to read things that could be long and have no issue. Especially if it has some really good information in it then we want people to be able to read all of it. Lets just add a little more to this just so that we can overflow the page.
+          </p>
+        </div>
+        <h3 class="kerses-related">Related Coverage</h3>
+        <hr>
+        <div class="kerses-similar-articles">
+          <div class="kerses-similar-scroll-box">
+            <div class="kerses-similar">
+              <a href="google.com" target="_blank" class="kerses-article-link">
+                <h3 class="kerses-similar-title">This is a Similar News Article with a Fairly Long Title</h3>
+              </a>
+              <p class="kerses-similar-producer">News Site - Date Written</p>
+            </div>
+            <div class="kerses-similar">
+              <a href="google.com" target="_blank" class="kerses-article-link">
+                <h3 class="kerses-similar-title">This is a Similar News Article</h3>
+              </a>
+              <p class="kerses-similar-producer">News Site - Date Written</p>
+            </div>
+            <div class="kerses-similar">
+              <a href="google.com" target="_blank" class="kerses-article-link">
+                <h3 class="kerses-similar-title">This is a Similar News Article</h3>
+              </a>
+              <p class="kerses-similar-producer">News Site - Date Written</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--
+  <div class="kerses-box">
+    <button class="kerses-close" onclick="this.parentNode.parentNode.removeChild(this.parentNode);"></button>
+    <div class="kerses-sk-chase">
+      <div class="kerses-sk-chase-dot"></div>
+      <div class="kerses-sk-chase-dot"></div>
+      <div class="kerses-sk-chase-dot"></div>
+      <div class="kerses-sk-chase-dot"></div>
+      <div class="kerses-sk-chase-dot"></div>
+      <div class="kerses-sk-chase-dot"></div>
+    </div>
+    <h4 class="kerses-loading">Querying Article</h4>
+  </div> -->
+  <script>
+    //buildKersesBox()
+    //buildKersesBox({is_article:true, title:"Title of Article", url: "https://google.com", content:"Article summary has a lot of info in it that is very useful", image:"image.png", site_name:"CNN", site_root:"https://cnn.com", date_published: "April 1, 2020", similar: [{title:"Title of Similar Article", url: "https://google.com", content:"Article summary has a lot of info in it that is very useful", image:"image.png", site_name:"CNN", site_root:"https://cnn.com", date_published: "April 1, 2020"}, {title:"Title of Similar Article 2", url: "https://google.com", content:"Article summary has a lot of info in it that is very useful", image:"image.png", site_name:"CNN", site_root:"https://cnn.com", date_published: "April 1, 2020"}, {title:"Title of Article with Longer Title that can Wrap Around", url: "https://google.com", content:"Article summary has a lot of info in it that is very useful", image:"image.png", site_name:"CNN", site_root:"https://cnn.com", date_published: "April 1, 2020"}]})
+  </script>
+</body>

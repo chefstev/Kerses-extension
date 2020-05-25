@@ -1,0 +1,27 @@
+{
+  "name": "Kerses",
+  "version": "0.1.1",
+  "description": "Display similar articles and main points right in your browser window, without ever having to leave the page",
+  "background":{
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "Kerses",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "contextMenus",
+    "https://kerses.com/*",
+    "http://*/*",
+    "https://*/"
+  ],
+  "web_accessible_resources": [
+    "kerses.css",
+    "kerses_logo_mini_128.png"
+  ],
+  "icons": {
+    "16": "kerses_logo_mini_128.png",
+    "128": "kerses_logo_128.png"
+  },
+  "manifest_version": 2
+}
